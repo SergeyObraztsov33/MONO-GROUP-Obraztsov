@@ -91,15 +91,7 @@ public class Student {
         this.awards = awards;
     }
 
-    /*
 
-    public String getContactWithPatients() {
-        return contactWithPatients;
-    }
-    public void setContactWithPatients(String contactWithPatients) {
-        this.contactWithPatients = contactWithPatients;
-    }
-   */
     @Override
     public String toString() {
         return "Student{" +
