@@ -1,5 +1,7 @@
 package com.example.demo.model;
 
+import jdk.nashorn.internal.objects.annotations.Getter;
+import jdk.nashorn.internal.objects.annotations.Setter;
 import org.springframework.data.annotation.Id;
 
 import javax.annotation.Generated;
@@ -8,18 +10,25 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Table;
 
-@Table
+// @data
 @Entity
 public class Student {
 
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO )
     private Long id;
+
     private String surname;
     private String name;
 
     public Student() {
 
+    }
+
+    public Student(Long id, String surname, String name) {
+        this.id = id;
+        this.surname = surname;
+        this.name = name;
     }
 
     public Long getId() {

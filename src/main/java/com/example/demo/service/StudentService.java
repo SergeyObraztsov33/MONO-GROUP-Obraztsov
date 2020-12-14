@@ -22,9 +22,12 @@ public class StudentService {
         return studentRepository.findStudentById(id);
     }
 
-    public Student saveStudent (Student student) {
+    public Student save (Student student) {
         return studentRepository.save(student);
     }
 
+    public Student delete (Long id) {
+        return studentRepository.delete(id);
+    }
 
 }
